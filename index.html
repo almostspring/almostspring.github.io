@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="almostspring 的个人网站，记录设计、前端与生活实验。">
+    <title>almostspring | Personal Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=block" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <header class="site-header" data-sticky>
+      <a class="logo" href="index.html" aria-label="almostspring 首页">almost<br>spring</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">打开导航</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="主导航">
+        <a href="index.html" aria-current="page">首页</a>
+        <a href="content.html">内容页</a>
+        <a href="#work">作品</a>
+        <a href="mailto:1163308725@qq.com">联系</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section-grid">
+        <div class="hero-copy">
+          <p class="eyebrow sticker">PERSONAL WEB / 2026</p>
+          <h1>
+            <span>almost</span>
+            <span class="outline">spring</span>
+            <span>is online</span>
+          </h1>
+          <p class="hero-lede">
+            一个高饱和、厚边框、带点“不服管”的个人网站。这里放前端实验、视觉笔记、作品索引，以及我正在变成的那种创作者。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="content.html">进入内容页</a>
+            <a class="button button-secondary" href="#work">看作品</a>
+          </div>
+        </div>
+        <div class="hero-board" aria-label="个人网站信息卡">
+          <div class="shape shape-square"></div>
+          <div class="shape shape-circle"></div>
+          <article class="profile-card rotate-neg">
+            <p class="card-label">ABOUT</p>
+            <h2>Front-end, design systems, tiny sparks.</h2>
+            <p>我喜欢把界面做得有性格：结构清楚，视觉有力，交互像真正能按下去的开关。</p>
+          </article>
+          <article class="mini-card rotate-pos">
+            <span class="star" aria-hidden="true">★</span>
+            <strong>Neo Brutal</strong>
+            <small>thick lines / loud color / fast motion</small>
+          </article>
+        </div>
+      </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>BUILD LOUD</span><span>THINK CLEAR</span><span>SHIP FAST</span><span>STAY HUMAN</span>
+          <span>BUILD LOUD</span><span>THINK CLEAR</span><span>SHIP FAST</span><span>STAY HUMAN</span>
+        </div>
+      </div>
+
+      <section class="section" id="work">
+        <div class="section-title">
+          <p class="eyebrow">SELECTED ZONES</p>
+          <h2>我把注意力放在这些地方</h2>
+        </div>
+        <div class="cards-grid">
+          <article class="loud-card">
+            <div class="icon-box">01</div>
+            <h3>视觉系统</h3>
+            <p>把字体、颜色、边框、阴影和节奏组织成可复用的语言，而不是一次性的漂亮截图。</p>
+          </article>
+          <article class="loud-card yellow">
+            <div class="icon-box">02</div>
+            <h3>前端体验</h3>
+            <p>关注真实使用路径：导航、响应式、键盘访问、触摸目标，以及每一次点击的反馈。</p>
+          </article>
+          <article class="loud-card violet">
+            <div class="icon-box">03</div>
+            <h3>内容表达</h3>
+            <p>把作品和想法写成可阅读、可分享、可继续扩展的页面，让个人网站真的成为个人空间。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="split-section">
+        <div class="poster">
+          <p class="eyebrow">NOW</p>
+          <h2>做一个能被记住的网页，而不是又一个模板。</h2>
+        </div>
+        <div class="note-stack">
+          <article>
+            <strong>01 / 可维护</strong>
+            <p>全站设计 token 集中在 CSS 变量里，页面结构清楚，后续换内容很快。</p>
+          </article>
+          <article>
+            <strong>02 / 可访问</strong>
+            <p>语义 HTML、跳转链接、焦点状态和移动端导航都已经准备好。</p>
+          </article>
+          <article>
+            <strong>03 / 可发布</strong>
+            <p>纯静态文件，适合 GitHub Pages，不需要安装依赖或构建命令。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 almostspring</p>
+      <a href="mailto:1163308725@qq.com">1163308725@qq.com</a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
