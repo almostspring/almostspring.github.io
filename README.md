@@ -1,6 +1,6 @@
 # almostspring personal site
 
-Two-page neo-brutalist personal website for GitHub Pages.
+Four-page neo-brutalist personal website for GitHub Pages.
 
 ## Pages
 
