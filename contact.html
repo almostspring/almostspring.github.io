@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="联系 almostspring，讨论前端、设计系统、个人网站和创作合作。">
+    <title>联系 | almostspring</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=block" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <header class="site-header" data-sticky>
+      <a class="logo" href="index.html" aria-label="almostspring 首页">almost<br>spring</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">打开导航</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="主导航">
+        <a href="index.html">首页</a>
+        <a href="content.html">内容页</a>
+        <a href="work.html">作品</a>
+        <a href="contact.html" aria-current="page">联系</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="contact-layout">
+        <div class="contact-copy">
+          <p class="eyebrow sticker">CONTACT / SIGNAL</p>
+          <h1>把想法扔过来，我们把它做成页面</h1>
+          <p class="hero-lede">
+            想聊个人网站、视觉系统、前端实现、内容结构，或者只是交换一个正在发光的点子，都可以从这里开始。
+          </p>
+          <div class="contact-cards" aria-label="联系方式">
+            <a class="contact-chip" href="mailto:1163308725@qq.com">
+              <span>Email</span>
+              <strong>1163308725@qq.com</strong>
+            </a>
+            <a class="contact-chip yellow" href="https://github.com/almostspring/almostspring.github.io">
+              <span>GitHub</span>
+              <strong>almostspring</strong>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" action="mailto:1163308725@qq.com" method="post" enctype="text/plain">
+          <label>
+            <span>你的名字</span>
+            <input name="name" type="text" autocomplete="name" placeholder="比如：春天的朋友">
+          </label>
+          <label>
+            <span>邮箱</span>
+            <input name="email" type="email" autocomplete="email" placeholder="hello@example.com">
+          </label>
+          <label>
+            <span>想聊什么</span>
+            <textarea name="message" rows="6" placeholder="写下项目、想法、问题，或者一句很酷的开场白。"></textarea>
+          </label>
+          <button class="button button-primary" type="submit">发送邮件</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 almostspring</p>
+      <a href="mailto:1163308725@qq.com">1163308725@qq.com</a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
