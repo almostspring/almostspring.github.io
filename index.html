@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="almostspring 的个人网站，记录设计、前端与生活实验。">
-    <title>almostspring | Personal Site</title>
+    <meta name="description" content="周心怡的个人简历网站，求职方向为金融科技岗、管理培训生。">
+    <title>周心怡 | 金融科技求职简历</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=block" rel="stylesheet">
@@ -13,7 +13,7 @@
   <body>
     <a class="skip-link" href="#main">跳到主要内容</a>
     <header class="site-header" data-sticky>
-      <a class="logo" href="index.html" aria-label="almostspring 首页">almost<br>spring</a>
+      <a class="logo" href="index.html" aria-label="周心怡简历首页">周心怡<br>resume</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
         <span></span>
         <span></span>
@@ -22,101 +22,108 @@
       </button>
       <nav class="site-nav" id="site-nav" aria-label="主导航">
         <a href="index.html" aria-current="page">首页</a>
-        <a href="content.html">内容页</a>
-        <a href="work.html">作品</a>
+        <a href="content.html">经历</a>
+        <a href="work.html">项目</a>
         <a href="contact.html">联系</a>
       </nav>
     </header>
 
     <main id="main">
-      <section class="hero section-grid">
+      <section class="hero section-grid resume-hero">
         <div class="hero-copy">
-          <p class="eyebrow sticker">PERSONAL WEB / 2026</p>
+          <p class="eyebrow sticker">FINTECH / BANKING / 2026</p>
           <h1>
-            <span>almost</span>
-            <span class="outline">spring</span>
-            <span>is online</span>
+            <span>周心怡</span>
+            <span class="outline">resume</span>
           </h1>
           <p class="hero-lede">
-            一个高饱和、厚边框、带点“不服管”的个人网站。这里放前端实验、视觉笔记、作品索引，以及我正在变成的那种创作者。
+            澳门大学金融科技硕士，华东交通大学软件工程本科。求职方向为金融科技岗、管理培训生，关注数据治理、系统建设与科技赋能业务。
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="content.html">进入内容页</a>
-            <a class="button button-secondary" href="work.html">看作品</a>
+            <a class="button button-primary" href="content.html">查看经历</a>
+            <a class="button button-secondary" href="work.html">项目成果</a>
           </div>
         </div>
-        <div class="hero-board" aria-label="个人网站信息卡">
-          <div class="shape shape-square"></div>
-          <div class="shape shape-circle"></div>
-          <article class="profile-card rotate-neg">
-            <p class="card-label">ABOUT</p>
-            <h2>Front-end, design systems, tiny sparks.</h2>
-            <p>我喜欢把界面做得有性格：结构清楚，视觉有力，交互像真正能按下去的开关。</p>
-          </article>
-          <article class="mini-card rotate-pos">
-            <span class="star" aria-hidden="true">★</span>
-            <strong>Neo Brutal</strong>
-            <small>thick lines / loud color / fast motion</small>
-          </article>
-        </div>
+
+        <aside class="resume-card rotate-neg" aria-label="简历摘要">
+          <p class="card-label">PROFILE</p>
+          <dl class="fact-list">
+            <div>
+              <dt>求职意向</dt>
+              <dd>金融科技岗 / 管理培训生</dd>
+            </div>
+            <div>
+              <dt>工作地点</dt>
+              <dd>南昌 / 九江 / 广州 / 武汉</dd>
+            </div>
+            <div>
+              <dt>身份信息</dt>
+              <dd>24岁 / 女 / 中共党员</dd>
+            </div>
+            <div>
+              <dt>联系方式</dt>
+              <dd>15879265831<br>mc45508@um.edu.mo</dd>
+            </div>
+          </dl>
+        </aside>
       </section>
 
       <div class="marquee" aria-hidden="true">
         <div class="marquee-track">
-          <span>BUILD LOUD</span><span>THINK CLEAR</span><span>SHIP FAST</span><span>STAY HUMAN</span>
-          <span>BUILD LOUD</span><span>THINK CLEAR</span><span>SHIP FAST</span><span>STAY HUMAN</span>
+          <span>SOFTWARE ENGINEERING</span><span>FINTECH</span><span>DATA ANALYSIS</span><span>BANKING TECH</span>
+          <span>SOFTWARE ENGINEERING</span><span>FINTECH</span><span>DATA ANALYSIS</span><span>BANKING TECH</span>
         </div>
       </div>
 
-      <section class="section" id="work">
+      <section class="section">
         <div class="section-title">
-          <p class="eyebrow">SELECTED ZONES</p>
-          <h2>我把注意力放在这些地方</h2>
+          <p class="eyebrow">EDUCATION</p>
+          <h2>复合背景：技术底座 + 金融科技视角</h2>
         </div>
-        <div class="cards-grid">
-          <article class="loud-card">
-            <div class="icon-box">01</div>
-            <h3>视觉系统</h3>
-            <p>把字体、颜色、边框、阴影和节奏组织成可复用的语言，而不是一次性的漂亮截图。</p>
-          </article>
+        <div class="cards-grid education-grid">
           <article class="loud-card yellow">
-            <div class="icon-box">02</div>
-            <h3>前端体验</h3>
-            <p>关注真实使用路径：导航、响应式、键盘访问、触摸目标，以及每一次点击的反馈。</p>
+            <div class="icon-box">M</div>
+            <h3>澳门大学</h3>
+            <p>金融科技硕士，2024.08 - 2026.06。专业成绩 GPA 3.46/4。</p>
           </article>
           <article class="loud-card violet">
-            <div class="icon-box">03</div>
-            <h3>内容表达</h3>
-            <p>把作品和想法写成可阅读、可分享、可继续扩展的页面，让个人网站真的成为个人空间。</p>
+            <div class="icon-box">B</div>
+            <h3>华东交通大学</h3>
+            <p>软件工程本科，2020.09 - 2024.06。GPA 3.74/5，专业排名 2/63。</p>
+          </article>
+          <article class="loud-card">
+            <div class="icon-box">★</div>
+            <h3>荣誉奖项</h3>
+            <p>特等奖学金、一等奖学金、三等奖学金；三好学生、优秀学生干部、优秀共产党员、优秀毕业生。</p>
           </article>
         </div>
       </section>
 
       <section class="split-section">
         <div class="poster">
-          <p class="eyebrow">NOW</p>
-          <h2>做一个能被记住的网页，而不是又一个模板。</h2>
+          <p class="eyebrow">SUMMARY</p>
+          <h2>细致稳健，理解业务，也能落到系统。</h2>
         </div>
         <div class="note-stack">
           <article>
-            <strong>01 / 可维护</strong>
-            <p>全站设计 token 集中在 CSS 变量里，页面结构清楚，后续换内容很快。</p>
+            <strong>01 / 数据意识</strong>
+            <p>具备数据清洗、分析与可视化基础，参与过企业历史数据清洗迁移与校验规则建立。</p>
           </article>
           <article>
-            <strong>02 / 可访问</strong>
-            <p>语义 HTML、跳转链接、焦点状态和移动端导航都已经准备好。</p>
+            <strong>02 / 系统协同</strong>
+            <p>理解需求调研、字段口径、流程规则、测试排查和上线支持等数字化项目环节。</p>
           </article>
           <article>
-            <strong>03 / 可发布</strong>
-            <p>纯静态文件，适合 GitHub Pages，不需要安装依赖或构建命令。</p>
+            <strong>03 / 业务表达</strong>
+            <p>能从业务场景出发理解系统建设与数据应用逻辑，具备跨部门沟通与服务意识。</p>
           </article>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© 2026 almostspring</p>
-      <a href="mailto:1163308725@qq.com">1163308725@qq.com</a>
+      <p>© 2026 周心怡</p>
+      <a href="mailto:mc45508@um.edu.mo">mc45508@um.edu.mo</a>
     </footer>
     <script src="script.js"></script>
   </body>
