@@ -1,6 +1,6 @@
 # 周心怡 resume site
 
-Neo-brutalist resume website for GitHub Pages.
+Four-page neo-brutalist personal website for GitHub Pages.
 
 ## Pages
 
