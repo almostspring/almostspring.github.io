@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="周心怡研究生毕业项目：基于 RapidMiner 的小红书达人营销效果预测模型。">
+    <meta name="description" content="周心怡研究生毕业项目：小红书达人投放决策支持框架研究。">
     <title>项目 | 周心怡</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,85 +29,182 @@
     </header>
 
     <main id="main">
-      <section class="content-hero work-hero">
+      <section class="content-hero work-hero project-hero">
         <p class="eyebrow sticker">GRADUATION PROJECT</p>
-        <h1>基于 RapidMiner 的小红书达人营销效果预测模型</h1>
+        <h1>小红书达人投放决策支持框架研究——预算效率、内容结构与达人筛选</h1>
         <p>
-          研究围绕品牌投放预算分配、内容结构优化与达人预筛选，基于小红书平台数据构建营销效果分析与决策支持框架。
+          基于新红平台数据，将品牌投放中的预算分配、内容结构优化和达人预筛选转化为可量化的数据分析问题，并用 RapidMiner 搭建完整的数据清洗、特征构建、可视化与预测建模流程。
         </p>
       </section>
 
-      <section class="work-board thesis-board">
+      <section class="project-story">
         <article class="project-card project-feature">
           <div class="project-number">01</div>
           <div>
-            <p class="eyebrow">PROJECT VALUE</p>
-            <h2>把投放决策拆成可量化的分析流程</h2>
+            <p class="eyebrow">BUSINESS QUESTION</p>
+            <h2>品牌预算应该投给谁、投什么内容、承担多少波动风险？</h2>
             <p>
-              项目使用平台互动、爆文率、CPE、达人层级、内容模块、媒介形式和商业内容占比等指标，在缺少 GMV 与完整转化链路数据的条件下，建立可解释的代理评估体系。
+              项目在缺少 GMV 与完整转化链路数据的条件下，使用互动量、爆文率、CPE、达人层级、内容模块、媒介形式、商业内容占比等平台指标构建代理评估体系，为前期投放策略提供决策支持。
             </p>
           </div>
         </article>
+
+        <div class="project-band">
+          <div class="project-band-copy">
+            <p class="eyebrow">FRAMEWORK</p>
+            <h2>五维价值链：成本、效果、结构、规模、时间</h2>
+            <p>
+              答辩框架将研究拆成四个模块：预算效率、内容结构、病毒传播稳定性、预测建模与达人筛选。每个模块先回答一个业务问题，再落到数据指标和 RapidMiner 流程。
+            </p>
+          </div>
+          <div class="figure-grid two-up">
+            <figure class="figure-tile">
+              <img src="assets/ppt-framework.png" alt="研究框架流程图">
+              <figcaption>研究框架：从指标层到分析模块再到筛选工具。</figcaption>
+            </figure>
+            <figure class="figure-tile">
+              <img src="assets/ppt-value-chain.png" alt="五维价值链雷达图">
+              <figcaption>五维价值链：Cost、Effect、Structure、Scale、Time。</figcaption>
+            </figure>
+          </div>
+        </div>
 
         <article class="project-card yellow">
           <div class="project-number">02</div>
           <h2>技术路线</h2>
           <ul class="resume-list compact-list">
-            <li>数据清洗、特征构建、分箱聚合与代理 ROI 指标设计。</li>
-            <li>增量 CPE 曲线、经验成本效率前沿、商业/自然内容热力图。</li>
-            <li>平均爆文率与变异系数分析，用于衡量传播潜力与稳定性。</li>
-            <li>RapidMiner 搭建线性回归、随机森林、GBDT、交叉验证与网格搜索流程。</li>
+            <li>数据处理：清洗平台报价、CPE、互动、爆文数、商业/自然笔记、粉丝规模等字段。</li>
+            <li>特征工程：构建内容模块、达人层级、媒介形式、商业占比、单位粉丝互动、代理 ROI 等变量。</li>
+            <li>可视化分析：增量 CPE 曲线、经验效率前沿、热力图、商业占比曲线、均值-波动散点图。</li>
+            <li>预测建模：线性回归、随机森林、GBDT、交叉验证、网格搜索、信息增益解释变量重要性。</li>
           </ul>
         </article>
 
-        <figure class="project-card project-figure">
-          <img src="assets/paper-framework.png" alt="小红书达人营销效果预测研究框架图">
-          <figcaption>研究框架：从平台数据、内容结构、投放效率到达人筛选的多模块决策链路。</figcaption>
-        </figure>
+        <div class="project-band red-band">
+          <div class="project-band-copy">
+            <p class="eyebrow">MODULE 1</p>
+            <h2>预算效率：找到同等预算下更高互动回报的组合</h2>
+            <p>
+              通过增量 CPE 与经验成本效率前沿比较 “内容模块 × 达人层级 × 媒介形式” 组合，识别在相似成本区间中更接近 Pareto-efficient path 的投放策略。
+            </p>
+          </div>
+          <div class="figure-grid two-up">
+            <figure class="figure-tile">
+              <img src="assets/ppt-budget-process.png" alt="增量 CPE 预算效率流程">
+              <figcaption>增量 CPE：比较额外成本与额外互动。</figcaption>
+            </figure>
+            <figure class="figure-tile wide-figure">
+              <img src="assets/ppt-budget-frontier.png" alt="内容模块全局成本效率前沿曲线">
+              <figcaption>经验效率前沿：在成本区间内保留最佳互动点。</figcaption>
+            </figure>
+          </div>
+        </div>
 
-        <article class="project-card violet">
-          <div class="project-number">03</div>
-          <h2>核心结论</h2>
-          <ul class="resume-list compact-list">
-            <li>中腰部达人更接近经验效率前沿，适合预算有限时作为主要投放对象。</li>
-            <li>多数模块中，自然推荐内容在互动与 CPE 表现上优于直接商业内容。</li>
-            <li>商业内容更适合作为加速器，而不是默认提高投放效果的唯一手段。</li>
-            <li>高爆文潜力与稳定性需要同时评估，避免只看曝光而忽略波动风险。</li>
-          </ul>
-        </article>
+        <div class="project-band">
+          <div class="project-band-copy">
+            <p class="eyebrow">MODULE 2</p>
+            <h2>内容结构：自然内容是基础，商业内容更像加速器</h2>
+            <p>
+              热力图用于比较商业内容与自然推荐内容在互动、CPE 和爆文潜力上的相对表现；商业占比曲线进一步回答“商业内容比例多少更合适”。
+            </p>
+          </div>
+          <div class="figure-grid three-up">
+            <figure class="figure-tile">
+              <img src="assets/ppt-content-heatmap-tier.png" alt="模块与达人层级互动相对指标热力图">
+              <figcaption>模块 × 达人层级。</figcaption>
+            </figure>
+            <figure class="figure-tile">
+              <img src="assets/ppt-content-heatmap-month.png" alt="模块与月份互动相对指标热力图">
+              <figcaption>模块 × 月份。</figcaption>
+            </figure>
+            <figure class="figure-tile">
+              <img src="assets/ppt-content-heatmap-scope.png" alt="商业内容与月份爆文相对指标热力图">
+              <figcaption>商业内容 × 月份。</figcaption>
+            </figure>
+          </div>
+          <div class="figure-grid three-up">
+            <figure class="figure-tile">
+              <img src="assets/ppt-commercial-curve-food.png" alt="食品模块商业占比与爆文率曲线">
+              <figcaption>Food：商业占比提高后爆文率走弱。</figcaption>
+            </figure>
+            <figure class="figure-tile">
+              <img src="assets/ppt-commercial-curve-home.png" alt="家居模块商业占比与单位粉丝互动曲线">
+              <figcaption>Home：单位粉丝互动随商业化加深下降。</figcaption>
+            </figure>
+            <figure class="figure-tile">
+              <img src="assets/ppt-commercial-curve-pvid.png" alt="摄影摄像模块商业占比与爆文率曲线">
+              <figcaption>PVID：部分中腰部账号在中等商业占比下反弹。</figcaption>
+            </figure>
+          </div>
+        </div>
 
-        <figure class="project-card project-figure">
-          <img src="assets/paper-commercial-heatmap.png" alt="商业内容与自然内容相对指标热力图">
-          <figcaption>内容结构分析：用热力图比较商业内容与自然推荐内容在 CPE、互动和爆文潜力上的相对表现。</figcaption>
-        </figure>
+        <div class="project-band violet-band">
+          <div class="project-band-copy">
+            <p class="eyebrow">MODULE 3</p>
+            <h2>稳定性与规模效应：不能只看爆发，也要看波动</h2>
+            <p>
+              项目把病毒传播能力拆成平均爆文率和波动系数 CV，用散点图观察高回报低波动、高回报高波动和低回报低波动区域，辅助区分主投、谨慎投放和低优先级组合。
+            </p>
+          </div>
+          <div class="figure-grid three-up">
+            <figure class="figure-tile">
+              <img src="assets/ppt-stability-module.png" alt="按内容模块的平均爆文率与波动散点图">
+              <figcaption>按内容模块看风险-回报。</figcaption>
+            </figure>
+            <figure class="figure-tile">
+              <img src="assets/ppt-stability-tier.png" alt="按达人层级的平均爆文率与波动散点图">
+              <figcaption>按达人层级比较稳定性。</figcaption>
+            </figure>
+            <figure class="figure-tile">
+              <img src="assets/ppt-stability-scope.png" alt="按内容范围的平均爆文率与波动散点图">
+              <figcaption>商业/自然内容范围差异。</figcaption>
+            </figure>
+          </div>
+        </div>
 
-        <figure class="project-card project-figure">
-          <img src="assets/paper-viral-stability.png" alt="平均爆文率与波动性散点图">
-          <figcaption>稳定性分析：结合平均爆文率与波动系数，识别高潜力低波动组合与高风险组合。</figcaption>
-        </figure>
+        <div class="project-band">
+          <div class="project-band-copy">
+            <p class="eyebrow">MODULE 4</p>
+            <h2>预测建模：把达人初筛变成可解释的机器学习任务</h2>
+            <p>
+              预测部分从回归走向分类：先预测单位粉丝互动和代理 ROI，再把问题转化为“是否进入高价值候选池”“是否具备高爆文潜力”的筛选任务。
+            </p>
+          </div>
+          <div class="metric-strip">
+            <div><strong>0.82</strong><span>unit_y 线性模型相关系数</span></div>
+            <div><strong>0.86</strong><span>GBDT ROI 回归相关系数</span></div>
+            <div><strong>93%+</strong><span>高价值达人分类准确率</span></div>
+            <div><strong>95.45%</strong><span>爆文潜力分类准确率</span></div>
+          </div>
+          <div class="figure-grid four-up">
+            <figure class="figure-tile">
+              <img src="assets/ppt-model-unit-linear.png" alt="单位粉丝互动线性回归 PerformanceVector">
+              <figcaption>单位粉丝互动预测。</figcaption>
+            </figure>
+            <figure class="figure-tile">
+              <img src="assets/ppt-model-roi-gbdt.png" alt="GBDT ROI 回归 PerformanceVector">
+              <figcaption>GBDT ROI 回归。</figcaption>
+            </figure>
+            <figure class="figure-tile">
+              <img src="assets/ppt-model-highvalue-rf.png" alt="高价值达人随机森林分类 PerformanceVector">
+              <figcaption>高价值达人分类。</figcaption>
+            </figure>
+            <figure class="figure-tile">
+              <img src="assets/ppt-model-viral-rf.png" alt="爆文潜力随机森林分类 PerformanceVector">
+              <figcaption>爆文潜力分类。</figcaption>
+            </figure>
+          </div>
+        </div>
 
-        <article class="project-card yellow">
-          <div class="project-number">04</div>
-          <h2>模型结果</h2>
-          <ul class="resume-list compact-list">
-            <li>单粉互动产出模型中，线性回归相关系数约 0.82，RMSE 约 0.068，解释性较强。</li>
-            <li>ROI 回归中，GBDT 相关系数接近 0.86，RMSE 约 0.31，但小样本下仍需谨慎解读。</li>
-            <li>高价值达人分类中，随机森林准确率超过 93%，kappa 约 0.73。</li>
-            <li>爆文潜力分类中，随机森林准确率约 95.45%，kappa 接近 0.886，整体稳定性最佳。</li>
-          </ul>
-        </article>
-
-        <figure class="project-card project-figure">
-          <img src="assets/paper-model-performance.png" alt="模型 PerformanceVector 结果图">
-          <figcaption>模型评估：以 RMSE、relative error、correlation 等指标比较不同模型的预测表现。</figcaption>
-        </figure>
-
-        <article class="project-card violet">
+        <article class="project-card project-feature yellow">
           <div class="project-number">05</div>
-          <h2>能力体现</h2>
-          <p>
-            这个项目体现了我在业务问题拆解、指标体系设计、数据清洗建模、可视化分析、模型评估和管理建议输出上的完整实践能力，适合迁移到金融科技岗位中的数据治理、客户运营、风控辅助分析和数字化决策支持场景。
-          </p>
+          <div>
+            <p class="eyebrow">HR TAKEAWAY</p>
+            <h2>项目能力可迁移到金融科技的数据治理与决策支持场景</h2>
+            <p>
+              该项目体现了我从业务问题拆解、指标体系设计、数据清洗聚合、可视化分析、机器学习建模、模型评估到管理建议输出的完整实践能力。对于银行金融科技岗位，这些能力可迁移到客户运营分析、风控辅助筛选、投放/渠道效率评估、数据看板与数字化决策支持。
+            </p>
+          </div>
         </article>
       </section>
     </main>

@@ -598,6 +598,18 @@ h1 span {
   padding: 0 0 clamp(4rem, 8vw, 7rem);
 }
 
+.project-story {
+  width: min(var(--max), calc(100% - 2rem));
+  display: grid;
+  gap: 1.75rem;
+  margin: 0 auto;
+  padding: 0 0 clamp(4rem, 8vw, 7rem);
+}
+
+.project-hero h1 {
+  max-width: 1120px;
+}
+
 .project-card {
   position: relative;
   min-height: 330px;
@@ -630,6 +642,123 @@ h1 span {
 .project-card p {
   font-size: 1.1rem;
   line-height: 1.55;
+}
+
+.project-band {
+  display: grid;
+  gap: 1.25rem;
+  border: 4px solid var(--ink);
+  background: var(--white);
+  box-shadow: var(--shadow-lg);
+  padding: clamp(1.25rem, 4vw, 2rem);
+}
+
+.red-band {
+  background: var(--red);
+}
+
+.violet-band {
+  background: var(--violet);
+}
+
+.project-band-copy {
+  max-width: 940px;
+}
+
+.project-band-copy h2 {
+  margin-bottom: 0.8rem;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 900;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.project-band-copy p {
+  font-size: 1.08rem;
+  line-height: 1.55;
+}
+
+.figure-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.two-up {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.three-up {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.four-up {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.figure-tile {
+  display: grid;
+  align-content: start;
+  gap: 0.65rem;
+  margin: 0;
+  border: 4px solid var(--ink);
+  background: var(--paper);
+  box-shadow: var(--shadow-sm);
+  padding: 0.75rem;
+}
+
+.figure-tile img {
+  width: 100%;
+  height: 230px;
+  object-fit: contain;
+  border: 3px solid var(--ink);
+  background: var(--white);
+}
+
+.two-up .figure-tile img {
+  height: 310px;
+}
+
+.four-up .figure-tile img {
+  height: 150px;
+}
+
+.wide-figure img {
+  object-fit: contain;
+}
+
+.figure-tile figcaption {
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.metric-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.metric-strip div {
+  border: 4px solid var(--ink);
+  background: var(--yellow);
+  box-shadow: var(--shadow-sm);
+  padding: 1rem;
+}
+
+.metric-strip strong,
+.metric-strip span {
+  display: block;
+}
+
+.metric-strip strong {
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  font-weight: 900;
+  line-height: 0.9;
+}
+
+.metric-strip span {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.35;
 }
 
 .project-figure {
@@ -841,8 +970,22 @@ h1 span {
     grid-template-columns: 1fr;
   }
 
+  .two-up,
+  .three-up,
+  .four-up,
+  .metric-strip {
+    grid-template-columns: 1fr;
+  }
+
   .project-feature {
     grid-template-columns: 1fr;
+  }
+
+  .figure-tile img,
+  .two-up .figure-tile img,
+  .four-up .figure-tile img {
+    height: auto;
+    max-height: 360px;
   }
 
   .poster,
