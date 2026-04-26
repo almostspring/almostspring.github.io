@@ -406,7 +406,8 @@ h1 span {
 .loud-card:hover,
 .article-card:hover,
 .project-card:hover,
-.contact-chip:hover {
+.contact-chip:hover,
+.skills-grid article:hover {
   transform: translate(-4px, -8px);
   box-shadow: 16px 16px 0 0 var(--ink);
 }
@@ -796,6 +797,7 @@ h1 span {
   background: var(--white);
   box-shadow: var(--shadow-sm);
   padding: 1rem;
+  transition: transform 160ms linear, box-shadow 160ms linear;
 }
 
 .skills-grid strong,
