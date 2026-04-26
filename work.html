@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="周心怡的项目经历与技能特长。">
+    <meta name="description" content="周心怡研究生毕业项目：基于 RapidMiner 的小红书达人营销效果预测模型。">
     <title>项目 | 周心怡</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,53 +30,84 @@
 
     <main id="main">
       <section class="content-hero work-hero">
-        <p class="eyebrow sticker">PROJECTS / SKILLS</p>
-        <h1>项目成果与技能特长</h1>
+        <p class="eyebrow sticker">GRADUATION PROJECT</p>
+        <h1>基于 RapidMiner 的小红书达人营销效果预测模型</h1>
         <p>
-          项目聚焦平台数据分析、营销效果预测、投放决策支持、红色文旅翻译服务平台，以及数据分析与系统实施能力。
+          研究围绕品牌投放预算分配、内容结构优化与达人预筛选，基于小红书平台数据构建营销效果分析与决策支持框架。
         </p>
       </section>
 
-      <section class="work-board">
+      <section class="work-board thesis-board">
         <article class="project-card project-feature">
           <div class="project-number">01</div>
           <div>
-            <p class="eyebrow">MASTER PROJECT</p>
-            <h2>小红书达人营销效果预测与投放决策研究</h2>
+            <p class="eyebrow">PROJECT VALUE</p>
+            <h2>把投放决策拆成可量化的分析流程</h2>
             <p>
-              围绕品牌投放预算分配、内容结构优化与达人预筛选问题，基于小红书平台数据搭建营销效果分析与决策支持框架。
+              项目使用平台互动、爆文率、CPE、达人层级、内容模块、媒介形式和商业内容占比等指标，在缺少 GMV 与完整转化链路数据的条件下，建立可解释的代理评估体系。
             </p>
           </div>
         </article>
 
         <article class="project-card yellow">
           <div class="project-number">02</div>
-          <h2>数据建模与分析</h2>
-          <p>对内容模块、达人层级、媒介形式、商业内容占比等变量进行数据清洗、特征构建、分箱聚合与效率前沿分析。</p>
+          <h2>技术路线</h2>
+          <ul class="resume-list compact-list">
+            <li>数据清洗、特征构建、分箱聚合与代理 ROI 指标设计。</li>
+            <li>增量 CPE 曲线、经验成本效率前沿、商业/自然内容热力图。</li>
+            <li>平均爆文率与变异系数分析，用于衡量传播潜力与稳定性。</li>
+            <li>RapidMiner 搭建线性回归、随机森林、GBDT、交叉验证与网格搜索流程。</li>
+          </ul>
         </article>
+
+        <figure class="project-card project-figure">
+          <img src="assets/paper-framework.png" alt="小红书达人营销效果预测研究框架图">
+          <figcaption>研究框架：从平台数据、内容结构、投放效率到达人筛选的多模块决策链路。</figcaption>
+        </figure>
 
         <article class="project-card violet">
           <div class="project-number">03</div>
-          <h2>机器学习预测</h2>
-          <p>采用线性回归、随机森林、GBDT 等方法，对单粉互动产出、ROI 代理指标及爆文潜力进行预测与分类。</p>
+          <h2>核心结论</h2>
+          <ul class="resume-list compact-list">
+            <li>中腰部达人更接近经验效率前沿，适合预算有限时作为主要投放对象。</li>
+            <li>多数模块中，自然推荐内容在互动与 CPE 表现上优于直接商业内容。</li>
+            <li>商业内容更适合作为加速器，而不是默认提高投放效果的唯一手段。</li>
+            <li>高爆文潜力与稳定性需要同时评估，避免只看曝光而忽略波动风险。</li>
+          </ul>
         </article>
 
-        <article class="project-card">
-          <div class="project-number">04</div>
-          <h2>红色文旅翻译服务器</h2>
-          <p>参与“挑战杯”项目，负责技术需求对接、翻译资源结构化整理及内容数据库搭建，实现中英双语切换与关键词分类检索。</p>
-        </article>
+        <figure class="project-card project-figure">
+          <img src="assets/paper-commercial-heatmap.png" alt="商业内容与自然内容相对指标热力图">
+          <figcaption>内容结构分析：用热力图比较商业内容与自然推荐内容在 CPE、互动和爆文潜力上的相对表现。</figcaption>
+        </figure>
+
+        <figure class="project-card project-figure">
+          <img src="assets/paper-viral-stability.png" alt="平均爆文率与波动性散点图">
+          <figcaption>稳定性分析：结合平均爆文率与波动系数，识别高潜力低波动组合与高风险组合。</figcaption>
+        </figure>
 
         <article class="project-card yellow">
-          <div class="project-number">05</div>
-          <h2>技能工具</h2>
-          <p>Excel、SQL、Python、Weka；具备数据清洗、分析与可视化基础，了解 Web 开发、系统实施流程、需求分析与测试协同。</p>
+          <div class="project-number">04</div>
+          <h2>模型结果</h2>
+          <ul class="resume-list compact-list">
+            <li>单粉互动产出模型中，线性回归相关系数约 0.82，RMSE 约 0.068，解释性较强。</li>
+            <li>ROI 回归中，GBDT 相关系数接近 0.86，RMSE 约 0.31，但小样本下仍需谨慎解读。</li>
+            <li>高价值达人分类中，随机森林准确率超过 93%，kappa 约 0.73。</li>
+            <li>爆文潜力分类中，随机森林准确率约 95.45%，kappa 接近 0.886，整体稳定性最佳。</li>
+          </ul>
         </article>
 
+        <figure class="project-card project-figure">
+          <img src="assets/paper-model-performance.png" alt="模型 PerformanceVector 结果图">
+          <figcaption>模型评估：以 RMSE、relative error、correlation 等指标比较不同模型的预测表现。</figcaption>
+        </figure>
+
         <article class="project-card violet">
-          <div class="project-number">06</div>
-          <h2>语言与证书</h2>
-          <p>英语四六级，IELTS 6.5，全国大学生英语竞赛二等奖；拥有软件著作权一项，古筝八级，机动车驾驶证。</p>
+          <div class="project-number">05</div>
+          <h2>能力体现</h2>
+          <p>
+            这个项目体现了我在业务问题拆解、指标体系设计、数据清洗建模、可视化分析、模型评估和管理建议输出上的完整实践能力，适合迁移到金融科技岗位中的数据治理、客户运营、风控辅助分析和数字化决策支持场景。
+          </p>
         </article>
       </section>
     </main>
